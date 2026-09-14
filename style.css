@@ -1,0 +1,173 @@
+/* General Page Styling with your requested Dark Theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a; /* Sleek, deeper black to match your screenshot */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center Balanced Top Navbar without icons */
+.top-navbar {
+    background-color: #121212;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #222;
+}
+
+.nav-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Main Container Layout */
+.calculator-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Cards System styling */
+.card {
+    background-color: #121212; /* Matches the card look in your screenshot */
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.calc-box {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Input Fields styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #00ff87; /* Label text matches your exact neon green! */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #00ff87;
+    outline: none;
+}
+
+/* Responsive Action Buttons using your exact vibrant Electric Neon Green theme */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00ff87; /* Your exact bright button green */
+    color: #0a0a0a;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #00cc6c; /* Slightly darker shade when hovering over it */
+}
+
+/* Result Box Display mechanism */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Color-Coded Action Guides Grid Layout */
+.guides-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .guides-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.guide-card h3 {
+    margin-top: 0;
+}
+
+.underweight { border-left: 5px solid #ff5252; }
+.normal { border-left: 5px solid #00ff87; } /* Matches your green */
+.overweight { border-left: 5px solid #ffd740; }
+.obese { border-left: 5px solid #ff5252; }
+
+/* FAQ Accordion Elements */
+.faq-box h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+details {
+    background-color: #1a1a1a;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: 600;
+    outline: none;
+}
+
+details p {
+    margin: 10px 0 0 0;
+    color: #b3b3b3;
+    line-height: 1.5;
+}
+
+/* Professional Disclaimer text footer */
+.medical-disclaimer {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}

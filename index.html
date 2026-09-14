@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI (Body Mass Index) Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-navbar">
+        <h1 class="nav-title">BMI (Body Mass Index) Calculator</h1>
+    </header>
+
+    <main class="calculator-container">
+        <section class="card calc-box">
+            <h2>Calculate Your BMI</h2>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="e.g. 70" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="height">Height (m):</label>
+                <input type="number" id="height" placeholder="e.g. 1.75" step="0.01">
+            </div>
+            <button id="calculate-btn">Calculate BMI</button>
+            <div id="result-display" class="result-box hidden">
+                <p>Your BMI is: <span id="bmi-value">0.0</span></p>
+                <p>Category: <span id="bmi-category">--</span></p>
+            </div>
+        </section>
+
+        <section class="guides-grid">
+            <div class="card guide-card underweight">
+                <h3>🔴 Underweight Guide (&lt; 18.5)</h3>
+                <p>Focus on structural strength training and nutrient-dense, higher-calorie meals to build lean mass safely.</p>
+            </div>
+            <div class="card guide-card normal">
+                <h3>🟢 Normal Weight Guide (18.5 - 24.9)</h3>
+                <p>Maintain metabolic health through balanced active movement routines and diverse whole-food nutrition.</p>
+            </div>
+            <div class="card guide-card overweight">
+                <h3>🟡 Overweight Guide (25.0 - 29.9)</h3>
+                <p>Prioritize protein pacing alongside sustainable habit modifications to support long-term body composition goals.</p>
+            </div>
+            <div class="card guide-card obese">
+                <h3>🔴 Obese Guide (&ge; 30.0)</h3>
+                <p>Emphasize anti-inflammatory nutrition plans paired with joint-safe cardio training models.</p>
+            </div>
+        </section>
+
+        <section class="card faq-box">
+            <h2>Athlete FAQ & Tracking</h2>
+            <details>
+                <summary>Is BMI accurate for athletes or bodybuilders?</summary>
+                <p>BMI does not distinguish between muscle mass and fat tissue. Highly muscular individuals may score in higher ranges despite having low body fat percentages.</p>
+            </details>
+            <details>
+                <summary>How often should I track my BMI metrics?</summary>
+                <p>Tracking once every 2-4 weeks provides a reliable view of trends without hyper-focusing on daily fluid weight changes.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="medical-disclaimer">
+        <p><strong>Disclaimer:</strong> This tool provides general educational insights only. Always consult a qualified healthcare professional before making major changes to your fitness or dietary plans.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
