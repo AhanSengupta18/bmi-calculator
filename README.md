@@ -24,7 +24,7 @@ Since I don't know much about web backend development yet, here is my understand
 ## My Tech Experience So Far
 * **Languages I know a bit of:** Python (Currently in Week 4 of CS50P), Java (Studied until Class 12).
 * **New tools I tried for this project:** HTML, JavaScript, and GitHub Pages hosting.
-* **My note on CSS:** I do not know how to write CSS styling from scratch yet! However, the code in my `style.css` file makes up 42.2% of this project because it is what automatically paints the background pitch black and makes the borders look sleek and neon green.
+* **My note on CSS:** I do not know how to write CSS styling from scratch yet.But however, the code in my `style.css` file makes up 42.2% of this project because it is what automatically paints the background pitch black and makes the borders look sleek and neon green.
 
 ---
 
